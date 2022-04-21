@@ -37,6 +37,12 @@ const users = [
   { id: 7, name: "Sohana", email: "Sohana@gmail.com", phone: "017888888" },
 ];
 
+//normally
+// app.get("/users", (req, res) => {
+//   res.send(users);
+// });
+
+//filter by search query parameter
 app.get("/users", (req, res) => {
   if (req.query.name) {
     const search = req.query.name.toLowerCase();
@@ -49,6 +55,7 @@ app.get("/users", (req, res) => {
   }
 });
 
+//get data
 app.get("/users/:id", (req, res) => {
   console.log(req.params);
   const id = parseInt(req.params.id);
@@ -64,6 +71,7 @@ app.get("/fruits/mango/fazli", (req, res) => {
   res.send("sour sour fazli flavour.");
 });
 
+//post data
 //server site theke data patano
 app.post("/users", (req, res) => {
   console.log("request", req.body); // request holo data asa

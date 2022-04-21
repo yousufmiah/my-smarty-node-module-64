@@ -1,4 +1,7 @@
 /**
+ * ------------------
+ * Basic setup
+ * -----------------
  * 1. create a folder (manually or mkdir)
  * 2. open command line to that folder.
  * 3. npm init -y (-y na dile question answer dite hoy, -y dile dite hoy na)
@@ -14,4 +17,12 @@
  * 5.listen to port
  * 6. node index.js
  * 7. check your browser for that port by 5000 
+ * 
+ * ---------------------
+ * get
+ * -----------------------
+ * 1. cors middleware
+ * -----------------------
+ * post
+ * ----------------------
   */
